@@ -9,7 +9,7 @@ const LOGIN = async (req, res) => {
               status: 200,
               message: "ok",
               token: jwt.sign({ adminId: admin.admin_id }),
-              data:{admin}
+              data:{name:admin.username,image:admin.admin_img}
             });
         }else{
             res.status(401).json({
