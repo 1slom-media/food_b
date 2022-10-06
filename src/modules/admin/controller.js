@@ -9,6 +9,7 @@ const LOGIN = async (req, res) => {
               status: 200,
               message: "ok",
               token: jwt.sign({ adminId: admin.admin_id }),
+              data:admin
             });
         }else{
             res.status(401).json({
