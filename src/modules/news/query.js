@@ -29,7 +29,7 @@ const PUTNEWS = `
                 case 
                 when length($3) > 1 then $3
                 else o.description
-            end 
+            end
     from old_news as o   
     where n.news_id = $1 and n.status = 'active'
     returning n.*                 
