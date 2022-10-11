@@ -43,7 +43,7 @@ CREATE TABLE IF NOT EXISTS contact(
     email varchar(50) not null,
     message text not null,
     subject varchar(30) not null,
-    status varchar(15) default 'active',
+    status varchar(15) default 'new',
     created_at timestamp default current_timestamp
 );
 
