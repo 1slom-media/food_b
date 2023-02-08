@@ -18,7 +18,8 @@ const PUTPRODUCTS = `
             product_name,
             description,
             price,
-            product_img
+            product_img,
+            category_id
         from products
         where product_id = $1    
     ) update products as p 
@@ -42,7 +43,12 @@ const PUTPRODUCTS = `
             case 
                 when length($5) > 0 then $5
                 else o.product_img
-                end          
+                end,       
+        category_id = 
+            case 
+                when $6 > 0 then $6
+                else o.category_id
+                end    
       from old_products as o   
       where p.product_id = $1 and p.status = 'active'
       returning p.*                 

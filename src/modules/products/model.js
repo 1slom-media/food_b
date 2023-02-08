@@ -26,9 +26,9 @@ const POST = async ({ product_name, description,price, category_id },image) => {
 };
 
 
-const PUT = async ({productId},{ product_name='', description='', price=0},image) => {
+const PUT = async ({productId},{ product_name='', description='', price=0,category_id},image) => {
   try {
-    return await fetch(PUTPRODUCTS, [productId, product_name, description, price,image?.filename]);
+    return await fetch(PUTPRODUCTS, [productId, product_name, description, price,image?.filename,category_id]);
   } catch (error) {
     console.log(error);
   }
