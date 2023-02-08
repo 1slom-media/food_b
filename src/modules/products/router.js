@@ -6,7 +6,7 @@ const router = Router();
 
 router.get("/products", controller.GET);
 router.get("/products/:productId", controller.GET);
-router.put("/products/:productId", controller.PUT);
+router.put("/products/:productId",upload.single('image'),controller.PUT);
 router.post("/products",upload.single('image'),controller.POST);
 router.delete("/products/:productId", controller.DELETE);
 

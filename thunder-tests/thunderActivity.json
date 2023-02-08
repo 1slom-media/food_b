@@ -1,0 +1,101 @@
+[
+  {
+    "_id": "9b7a5961-d7e3-4ad6-a775-b65c3f315aeb",
+    "colId": "history",
+    "containerId": "",
+    "name": "server ready at http://localhost:5000/login",
+    "url": "http://localhost:5000/categories",
+    "method": "GET",
+    "sortNum": 0,
+    "created": "2022-10-22T09:32:57.563Z",
+    "modified": "2023-01-04T19:56:35.373Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"username\":\"islom\",\n  \"password\":\"123456\"\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "57f910c9-d7ea-4988-a5ac-43564fc4c28c",
+    "colId": "history",
+    "containerId": "",
+    "name": "http://localhost:5000/login",
+    "url": "http://localhost:5000/login",
+    "method": "POST",
+    "sortNum": 0,
+    "created": "2022-10-22T09:33:07.156Z",
+    "modified": "2022-11-10T04:48:37.906Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"username\":\"islom\",\n  \"password\":\"12345\"\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "1ffd9573-1f33-4b48-86fb-3c2b911be726",
+    "colId": "history",
+    "containerId": "",
+    "name": "http://localhost:5000/products",
+    "url": "http://localhost:5000/products",
+    "method": "GET",
+    "sortNum": 0,
+    "created": "2023-01-09T15:26:21.207Z",
+    "modified": "2023-01-09T15:26:21.207Z",
+    "headers": [],
+    "params": [],
+    "tests": []
+  },
+  {
+    "_id": "77fdc5f3-b18f-45e6-80a3-0d6257cd4722",
+    "colId": "history",
+    "containerId": "",
+    "name": "http://localhost:5000/products",
+    "url": "http://localhost:5000/products",
+    "method": "POST",
+    "sortNum": 0,
+    "created": "2023-01-09T15:27:59.368Z",
+    "modified": "2023-01-09T15:28:58.828Z",
+    "headers": [
+      {
+        "name": "token",
+        "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhZG1pbklkIjoxLCJpYXQiOjE2NzMyNzgwOTN9.9g94ryqWmBJJsnK_1lkuQKFwhIntFntdoYY4JIRVUlc"
+      }
+    ],
+    "params": [],
+    "body": {
+      "type": "formdata",
+      "raw": "",
+      "form": [
+        {
+          "name": "category_id",
+          "value": "1"
+        },
+        {
+          "name": "product_name",
+          "value": "nimadir"
+        },
+        {
+          "name": "description",
+          "value": "ajoyib nimadir"
+        },
+        {
+          "name": "price",
+          "value": "2000"
+        }
+      ],
+      "files": [
+        {
+          "name": "image",
+          "value": "..\\..\\..\\..\\..\\Pictures\\fon\\0_eox0f0NwoaA5HNG-.jpg"
+        }
+      ]
+    },
+    "tests": []
+  }
+]
